@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Sulawesi Coco Total Indonesia | Premium Export Commodities</title>
+    
+    <!-- SEO Meta Tags for B2B Export -->
+    <meta name="description" content="PT. Sulawesi Coco Total Indonesia is a premier Indonesian exporter of agricultural and commodity products. Specializing in Coconut, Charcoal, Spices, and authentic local foods. Global shipping with strict QC.">
+    <meta name="keywords" content="Indonesian Exporter, B2B Export Indonesia, PT. Sulawesi Coco Total Indonesia, Desiccated Coconut Supplier, Hardwood Charcoal Export, Spices Indonesia, Wholesale Agriculture">
+    <meta name="author" content="Ichsan">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans for a modern, corporate feel. Lora for elegant headers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0B1C24',    // Deep Navy for trust
+                            primary: '#1D4ED8', // Blue for professionalism
+                            gold: '#D4AF37',    // Gold for premium quality
+                            light: '#F8FAFC',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F8FAFC;
+        }
+
+        /* Navbar glass effect */
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* B2B Product Card Hover */
+        .product-card {
+            transition: all 0.4s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .product-image-wrapper img {
+            transition: transform 0.6s ease;
+        }
+        .product-card:hover .product-image-wrapper img {
+            transform: scale(1.05);
+        }
+
+        /* Custom Tabs for Product Specs */
+        .spec-tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .spec-tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Form styling */
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #E2E8F0;
+            border-radius: 0.5rem;
+            background-color: #F8FAFC;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased overflow-x-hidden">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-brand-gold rounded flex items-center justify-center text-white font-serif font-bold text-xl group-hover:bg-amber-500 transition">
+                        S
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-lg md:text-xl font-bold text-white transition-colors duration-300 leading-tight" id="nav-logo">
+                            PT. SCTI
+                        </span>
+                        <span class="text-[0.65rem] text-brand-gold font-semibold uppercase tracking-wider hidden sm:block" id="nav-tagline">Global Export Partner</span>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="#about" class="text-white hover:text-brand-gold transition text-sm font-semibold nav-link">About Company</a>
+                    <a href="#products" class="text-white hover:text-brand-gold transition text-sm font-semibold nav-link">Our Products</a>
+                    <a href="#why-us" class="text-white hover:text-brand-gold transition text-sm font-semibold nav-link">Why Choose Us</a>
+                    <a href="#contact" class="text-white hover:text-brand-gold transition text-sm font-semibold nav-link">Contact</a>
+                    
+                    <a href="#contact" class="bg-brand-gold hover:bg-amber-500 text-brand-dark px-6 py-2.5 rounded text-sm font-bold transition shadow-lg flex items-center gap-2">
+                        Request Quote <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-2xl flex flex-col py-6 px-6 space-y-5 border-t">
+            <a href="#about" class="text-brand-dark font-semibold text-lg border-b border-gray-100 pb-3">About Company</a>
+            <a href="#products" class="text-brand-dark font-semibold text-lg border-b border-gray-100 pb-3">Our Products</a>
+            <a href="#why-us" class="text-brand-dark font-semibold text-lg border-b border-gray-100 pb-3">Why Choose Us</a>
+            <a href="#contact" class="text-brand-dark font-semibold text-lg border-b border-gray-100 pb-3">Contact</a>
+            <a href="#contact" class="bg-brand-gold text-center text-brand-dark py-3 rounded-lg font-bold">Request a Quote</a>
+        </div>
+    </nav>
+
+    <header class="relative min-h-[90vh] flex items-center justify-center pt-20">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <!-- Professional port/shipping image representing global trade -->
+            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+                 alt="Global Logistics and Port" 
+                 class="w-full h-full object-cover"
+                 loading="lazy">
+            <div class="absolute inset-0 bg-brand-dark bg-opacity-80"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
+            
+            <div class="lg:w-3/5 text-left" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+                    <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+                    <span class="text-white text-xs font-semibold tracking-wider uppercase">Verified Indonesian Exporter</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif text-white font-bold mb-6 leading-tight">
+                    Sourcing Indonesia's Finest Commodities for the <span class="text-brand-gold italic">Global Market</span>
+                </h1>
+                
+                <p class="text-gray-300 text-lg md:text-xl font-light mb-10 max-w-2xl leading-relaxed">
+                    PT. Sulawesi Coco Total Indonesia is your trusted partner for premium agricultural and industrial commodities. Delivering quality, traceability, and consistency worldwide.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#products" class="bg-brand-gold hover:bg-amber-500 text-brand-dark px-8 py-3.5 rounded-lg transition duration-300 font-bold text-center flex items-center justify-center gap-2">
+                        Explore Catalog <i class="fas fa-box-open"></i>
+                    </a>
+                    <a href="https://wa.me/6282241622230" target="_blank" class="bg-transparent border border-white text-white hover:bg-white hover:text-brand-dark px-8 py-3.5 rounded-lg transition duration-300 font-bold text-center flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> Consult via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trust Badges Sidebar (Hero) -->
+            <div class="hidden lg:flex flex-col gap-6 lg:w-1/4" data-aos="fade-left" data-aos-delay="300">
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 text-white">
+                    <i class="fas fa-globe-americas text-brand-gold text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Global Reach</h3>
+                    <p class="text-sm text-gray-300">Serving wholesale buyers across Asia, Middle East, Europe & Americas.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 text-white">
+                    <i class="fas fa-seedling text-brand-gold text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-1">Direct from Origin</h3>
+                    <p class="text-sm text-gray-300">Working directly with local farmers and communities for traceability.</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="py-8 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm font-semibold text-gray-400 uppercase tracking-widest mb-6">Committed to International Standards</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Placeholders for Certificates. In real life, replace with actual SVG/PNG of ISO, HACCP, Halal, etc -->
+                <div class="flex items-center gap-2 text-xl font-bold font-serif text-gray-800"><i class="fas fa-certificate text-brand-gold"></i> Export Quality</div>
+                <div class="flex items-center gap-2 text-xl font-bold font-serif text-gray-800"><i class="fas fa-check-circle text-green-600"></i> Phytosanitary Ready</div>
+                <div class="flex items-center gap-2 text-xl font-bold font-serif text-gray-800"><i class="fas fa-shield-alt text-blue-600"></i> Strict QC</div>
+                <div class="flex items-center gap-2 text-xl font-bold font-serif text-gray-800"><i class="fas fa-leaf text-green-500"></i> 100% Natural</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <div class="lg:w-1/2 relative" data-aos="fade-right">
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-2xl">
+                        <!-- Owner Photo -->
+                        <img src="aset/owner.jpg" 
+                             alt="Mr. Ichsan - Director" 
+                             class="w-full object-cover aspect-[4/3] grayscale hover:grayscale-0 transition duration-700"
+                             loading="lazy">
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-brand-gold/20 rounded-full blur-xl z-0"></div>
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 border-[10px] border-brand-gold rounded-xl z-0 hidden md:block"></div>
+                </div>
+
+                <div class="lg:w-1/2" data-aos="fade-left">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-12 h-[2px] bg-brand-gold"></span>
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs">Director's Message</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6 leading-snug">
+                        Bridging Indonesian Heritage to Your Business.
+                    </h2>
+                    
+                    <div class="text-gray-600 space-y-4 mb-8">
+                        <p class="leading-relaxed">
+                            Welcome to <strong>PT. Sulawesi Coco Total Indonesia</strong>. My name is Ichsan, and as an export professional, my mission is simple: to provide the global market with the highest quality commodities sourced directly from the rich soils of Indonesia.
+                        </p>
+                        <p class="leading-relaxed">
+                            We don't just act as traders; we are partners. By empowering local farmers and communities—from the pesantren in West Java producing authentic soy milk, to the charcoal craftsmen—we ensure that every container we ship carries a story of sustainability and unmatched quality. 
+                        </p>
+                        <p class="leading-relaxed font-medium text-brand-dark">
+                            "Your trust is our capital. We guarantee transparent processes, timely shipments, and specifications that meet your exact industrial needs."
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand-dark text-brand-gold rounded-full flex items-center justify-center text-xl">
+                            <i class="fas fa-signature"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-lg font-serif">Ichsan</p>
+                            <p class="text-sm text-gray-500 uppercase tracking-wide">Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-2 block">Our Export Catalog</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-4">Premium Commodities</h2>
+                <p class="text-gray-600">
+                    Discover our range of export-ready products. Each item is carefully curated, processed under strict quality control, and ready for bulk international shipping.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <!-- Product 1: Coconut -->
+                <div class="product-card bg-white border border-gray-100 rounded-2xl overflow-hidden group" data-aos="fade-up">
+                    <div class="h-64 relative product-image-wrapper overflow-hidden">
+                        <img src="https://www.kbvresearch.com/images/blog/coconut-derivatives-market-outlook.webp" alt="Coconut Products" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white px-3 py-1 rounded text-xs font-bold text-brand-dark shadow">Origin: West Java</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-brand-dark mb-2">Coconut Derivatives</h3>
+                        <p class="text-gray-600 mb-6 text-sm">We supply Fresh Young Coconuts (Diamond Cut) and High-Fat/Low-Fat Desiccated Coconut. Ideal for beverage industries, bakeries, and confectioneries globally.</p>
+                        
+                        <!-- Specs -->
+                        <div class="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-100">
+                            <h4 class="text-xs font-bold text-gray-500 uppercase mb-3">Key Specifications (Desiccated)</h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li class="flex justify-between border-b border-gray-200 pb-1"><span>Fat Content</span> <span class="font-semibold">High (65%+) / Low</span></li>
+                                <li class="flex justify-between border-b border-gray-200 pb-1"><span>Moisture</span> <span class="font-semibold">Max 3%</span></li>
+                                <li class="flex justify-between"><span>Packaging</span> <span class="font-semibold">25kg Kraft Paper Bag</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="text-brand-primary font-bold hover:text-brand-dark transition flex items-center gap-2">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Charcoal -->
+                <div class="product-card bg-white border border-gray-100 rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 relative product-image-wrapper overflow-hidden">
+                        <img src="https://www.bbqspitrotisseries.com.au/assets/full/CHAR-LUMP20.webp?20250909083706" alt="Hardwood Charcoal" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white px-3 py-1 rounded text-xs font-bold text-brand-dark shadow">Grade: Industrial & BBQ</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-brand-dark mb-2">Hardwood Charcoal</h3>
+                        <p class="text-gray-600 mb-6 text-sm">High-quality hardwood charcoal (Mangrove, Tamarind/Asem, Palm). Delivering high heat, low ash, and long burning time. Perfect for industrial use and BBQ.</p>
+                        
+                        <!-- Specs -->
+                        <div class="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-100">
+                            <h4 class="text-xs font-bold text-gray-500 uppercase mb-3">Key Specifications (Tamarind)</h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li class="flex justify-between border-b border-gray-200 pb-1"><span>Carbon Content</span> <span class="font-semibold">75% - 80%</span></li>
+                                <li class="flex justify-between border-b border-gray-200 pb-1"><span>Ash Content</span> <span class="font-semibold">Max 5%</span></li>
+                                <li class="flex justify-between"><span>Burning Time</span> <span class="font-semibold">4 - 5 Hours</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="text-brand-primary font-bold hover:text-brand-dark transition flex items-center gap-2">Inquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Authentic Local Products Grid -->
+            <div class="mt-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark">Authentic Local F&B Specialties</h3>
+                    <div class="flex-1 h-px bg-gray-200"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Item: Soy Milk -->
+                    <div class="group cursor-pointer" data-aos="fade-up">
+                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                            <img src="https://switch4good.org/wp-content/uploads/2025/07/Soy-Milk-1-1024x582.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Soy Milk">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg text-brand-dark">Pesantren Soy Milk</h4>
+                        <p class="text-sm text-gray-500 mb-1">Origin: West Java</p>
+                        <p class="text-xs text-gray-600 line-clamp-3">Crafted in a local Islamic boarding school. Empowering education through commerce with pure, highly nutritious soy milk.</p>
+                    </div>
+
+                    <!-- Item: Pineapple Juice -->
+                    <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1550828520-4cb496926fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Pineapple Juice">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg text-brand-dark">Fresh Pineapple Juice</h4>
+                        <p class="text-sm text-gray-500 mb-1">Origin: Sukabumi</p>
+                        <p class="text-xs text-gray-600 line-clamp-3">Sun-kissed pineapples pressed immediately to lock in pure, refreshing goodness without artificial additives.</p>
+                    </div>
+
+                    <!-- Item: Brem & Pecel -->
+                    <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                            <img src="https://awsimages.detik.net.id/community/media/visual/2022/10/20/brem-madiun-2.jpeg?w=1200" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Madiun Cuisine">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg text-brand-dark">Brem & Bumbu Pecel</h4>
+                        <p class="text-sm text-gray-500 mb-1">Origin: Madiun</p>
+                        <p class="text-xs text-gray-600 line-clamp-3">Showcasing East Java's culinary heritage. Traditional sweet Brem and meticulously crafted, authentic peanut sauce.</p>
+                    </div>
+
+                    <!-- Item: Krupuk Udang -->
+                    <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                            <img src="https://down-id.img.susercontent.com/file/416ffbb6276a0872c9756c751ad5830b" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Shrimp Crackers">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg text-brand-dark">Krupuk Udang (Crackers)</h4>
+                        <p class="text-sm text-gray-500 mb-1">Origin: Sidoarjo</p>
+                        <p class="text-xs text-gray-600 line-clamp-3">Made with fresh, locally sourced shrimp from coastal waters, processed to maintain its signature crunch globally.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <!-- Abstract background pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0 40V0h40v40H0z" fill="none"/><path d="M40 0L0 40M0 0l40 40" stroke="currentColor" stroke-width="1"/></pattern></defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Why Partner With PT. SCTI?</h2>
+                <p class="text-gray-400">We streamline the complex import process by providing end-to-end solutions, from sourcing the raw materials to arranging logistics.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/10 transition" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-16 h-16 mx-auto bg-brand-gold rounded-full flex items-center justify-center text-brand-dark text-2xl mb-6">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Direct Sourcing</h3>
+                    <p class="text-sm text-gray-400">By cutting out the middleman, we offer competitive pricing while ensuring fair trade for local Indonesian farmers and artisans.</p>
+                </div>
+
+                <div class="p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/10 transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto bg-brand-gold rounded-full flex items-center justify-center text-brand-dark text-2xl mb-6">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom Packaging</h3>
+                    <p class="text-sm text-gray-400">We support private labeling and custom packaging sizes to perfectly align with your brand guidelines and market requirements.</p>
+                </div>
+
+                <div class="p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/10 transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto bg-brand-gold rounded-full flex items-center justify-center text-brand-dark text-2xl mb-6">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Logistics Expertise</h3>
+                    <p class="text-sm text-gray-400">FOB or CIF, we handle the documentation, customs clearance, and freight forwarding to ensure smooth delivery to your port.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- NEW SECTION: CORPORATE DATA & EXPORT DESTINATIONS -->
+    <section id="corporate-data" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Global Destinations -->
+            <div class="mb-20" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row gap-8 items-center border-b border-gray-200 pb-12">
+                    <div class="md:w-1/3">
+                        <h2 class="text-3xl font-serif font-bold text-brand-dark mb-4">Export Destinations</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            We export and ship our premium commodities from major Indonesian ports (Jakarta, Surabaya, Makassar) to global partners worldwide.
+                        </p>
+                    </div>
+                    <div class="md:w-2/3 w-full">
+                        <ul class="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-2 text-sm text-gray-700 font-medium">
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-americas text-brand-gold text-xs"></i> USA & Canada</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-europe text-brand-gold text-xs"></i> Germany</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-europe text-brand-gold text-xs"></i> United Kingdom</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-europe text-brand-gold text-xs"></i> Netherlands</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-asia text-brand-gold text-xs"></i> UAE & Saudi Arabia</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-asia text-brand-gold text-xs"></i> Turkey & Jordan</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-asia text-brand-gold text-xs"></i> South Korea</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-globe-asia text-brand-gold text-xs"></i> Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corporate Information Tables -->
+            <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-2 block">Transparency & Trust</span>
+                <h2 class="text-3xl font-serif font-bold text-brand-dark">Corporate Information</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Legal Data -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+                    <h3 class="text-xl font-bold text-brand-dark mb-6 flex items-center gap-3">
+                        <i class="fas fa-file-contract text-brand-gold"></i> Company Legal Data
+                    </h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-600 col-span-1">Company Name</span>
+                            <span class="text-gray-900 col-span-2 font-medium">PT. Sulawesi Coco Total Indonesia</span>
+                        </div>
+                        <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-600 col-span-1">Owner / Director</span>
+                            <span class="text-gray-900 col-span-2">Mr. Ichsan</span>
+                        </div>
+                        <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-600 col-span-1">Established</span>
+                            <span class="text-gray-900 col-span-2">[Year Established, e.g., 2023]</span>
+                        </div>
+                        <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-600 col-span-1">NIB (Reg. Number)</span>
+                            <span class="text-gray-900 col-span-2 font-mono bg-white px-2 py-1 border rounded">[Your NIB Number]</span>
+                        </div>
+                        <div class="grid grid-cols-3 pb-2">
+                            <span class="font-semibold text-gray-600 col-span-1">Tax ID (NPWP)</span>
+                            <span class="text-gray-900 col-span-2 font-mono bg-white px-2 py-1 border rounded">[Your NPWP Number]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Production & Export Capacity -->
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-brand-dark mb-6 flex items-center gap-3">
+                        <i class="fas fa-industry text-brand-gold"></i> Production & Export Capacity
+                    </h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-600 col-span-1">Volume Capacity</span>
+                            <span class="text-gray-900 col-span-2">Up to [XX] Metric Tons per month</span>
+                        </div>
+                        <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-600 col-span-1">OEM Production</span>
+                            <span class="text-gray-900 col-span-2">Available (Production under client's brand)</span>
+                        </div>
+                        <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-600 col-span-1">Port of Loading</span>
+                            <span class="text-gray-900 col-span-2">Jakarta (Priok), Surabaya, Makassar</span>
+                        </div>
+                        <div class="grid grid-cols-3 pb-2">
+                            <span class="font-semibold text-gray-600 col-span-1">Export Docs</span>
+                            <span class="text-gray-900 col-span-2">Full set available (Invoice, PL, BL, COO, Phytosanitary/Fumigation if required)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Details (Full Width) -->
+                <div class="bg-brand-dark text-white rounded-xl p-8 shadow-xl lg:col-span-2 relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Decorative element -->
+                    <i class="fas fa-university absolute -right-4 -bottom-8 text-9xl text-white opacity-5"></i>
+                    
+                    <h3 class="text-xl font-bold text-brand-gold mb-6 flex items-center gap-3 relative z-10">
+                        <i class="fas fa-money-check-alt"></i> Corporate Bank Details
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm relative z-10">
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-3 border-b border-white/20 pb-3">
+                                <span class="font-semibold text-gray-400 col-span-1">Bank Name</span>
+                                <span class="col-span-2 font-medium">[Your Corporate Bank Name, e.g., Bank Mandiri]</span>
+                            </div>
+                            <div class="grid grid-cols-3 border-b border-white/20 pb-3">
+                                <span class="font-semibold text-gray-400 col-span-1">SWIFT Code</span>
+                                <span class="col-span-2 font-mono text-brand-gold tracking-widest">[SWIFT CODE]</span>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-3 border-b border-white/20 pb-3">
+                                <span class="font-semibold text-gray-400 col-span-1">Account Name</span>
+                                <span class="col-span-2 font-bold tracking-wide uppercase">PT. SULAWESI COCO TOTAL INDONESIA</span>
+                            </div>
+                            <div class="grid grid-cols-3 border-b border-white/20 pb-3">
+                                <span class="font-semibold text-gray-400 col-span-1">Account USD</span>
+                                <span class="col-span-2 font-mono text-lg">[Your USD Account Number]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-6 relative z-10 italic">* Please verify account details via official email before making any wire transfers.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row" data-aos="fade-up">
+                  
+                <!-- Contact Info Panel -->
+                <div class="lg:w-2/5 bg-brand-dark text-white p-10 md:p-12 relative overflow-hidden flex flex-col justify-between">
+                    <div class="relative z-10">
+                        <h2 class="text-3xl font-serif font-bold mb-2">Get in Touch</h2>
+                        <p class="text-gray-400 text-sm mb-10">Request a quote, ask for specifications, or schedule a business meeting.</p>
+
+                        <div class="space-y-8">
+                            <a href="https://wa.me/6282241622230" target="_blank" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded flex items-center justify-center group-hover:bg-brand-gold group-hover:text-brand-dark transition text-xl">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-gold uppercase tracking-wider font-bold mb-1">WhatsApp (Mr. Ichsan)</p>
+                                    <p class="text-lg font-medium">+62 822-4162-2230</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:b.ichsan0911@gmail.com" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 bg-white/10 rounded flex items-center justify-center group-hover:bg-brand-gold group-hover:text-brand-dark transition text-xl">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-gold uppercase tracking-wider font-bold mb-1">Email Inquiry</p>
+                                    <p class="text-lg font-medium break-all">b.ichsan0911@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Add Addresses Here -->
+                        <div class="mt-8 space-y-5">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 mt-1 bg-white/10 rounded-full flex shrink-0 items-center justify-center text-brand-gold text-sm">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-gold uppercase tracking-wider font-bold mb-1">Sales Office</p>
+                                    <p class="text-sm text-gray-300 leading-relaxed">Jl. Sambu no 7 kecamatan Baranangsiang Bogor 16143 Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 mt-1 bg-white/10 rounded-full flex shrink-0 items-center justify-center text-brand-gold text-sm">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-gold uppercase tracking-wider font-bold mb-1">Site Project</p>
+                                    <p class="text-sm text-gray-300 leading-relaxed">BTN Grandcity blok B/5 rt03 rw01 Gersamata, Laikaaha, Ranomeeto Konawe Selatan, Kendari Southeast Sulawesi 93870 Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 mt-8 pt-6 border-t border-white/20">
+                        <p class="text-sm font-semibold mb-4">Follow Our Journey:</p>
+                        <div class="flex gap-3 flex-wrap">
+                            <a href="https://www.facebook.com/p/PT-Sulawesi-Coco-Total-Indonesia-61569976538716/" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/scti_05/" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-pink-600 transition" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/b.ichsan-20287255" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-500 transition" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://tiktok.com/@mudahmart1" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-black transition" title="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- decorative circles -->
+                    <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-brand-primary rounded-full blur-3xl opacity-20"></div>
+                </div>
+
+                <!-- B2B Form & Maps Panel -->
+                <div class="lg:w-3/5 p-10 md:p-12">
+                    <h3 class="text-2xl font-bold text-brand-dark mb-6">Send an Inquiry</h3>
+                    
+                    <!-- Form Layout -->
+                    <form action="https://formsubmit.co/b.ichsan0911@gmail.com" method="POST" class="space-y-4 mb-10">
+                        <!-- Pengaturan rahasia FormSubmit -->
+                        <input type="hidden" name="_subject" value="New B2B Inquiry from SCTI Website">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Company Name *</label>
+                                <input type="text" name="Company_Name" required class="form-input" placeholder="Your Company">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Contact Person *</label>
+                                <input type="text" name="Contact_Person" required class="form-input" placeholder="John Doe">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
+                                <input type="email" name="Email" required class="form-input" placeholder="john@company.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Product of Interest</label>
+                                <select name="Product_Interest" class="form-input text-gray-600">
+                                    <option value="Not Specified">Select a product...</option>
+                                    <option value="Desiccated Coconut">Desiccated Coconut</option>
+                                    <option value="Hardwood Charcoal">Hardwood Charcoal</option>
+                                    <option value="Local F&B">Local F&B (Soy Milk, Juice, etc)</option>
+                                    <option value="Other">Other / General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Message / Specifications Required</label>
+                            <textarea name="Message" rows="4" class="form-input" placeholder="Please include desired volume, port of destination, or specific grades..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-dark hover:bg-brand-primary text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md">
+                            Submit Inquiry
+                        </button>
+                    </form>
+
+                    <!-- Google Map -->
+                    <div class="relative w-full h-72 md:h-80 rounded-xl overflow-hidden border border-gray-200">
+                         <iframe 
+                            src="https://maps.google.com/maps?q=Jl.%20Sambu%20no%207%20Baranangsiang%20Bogor%2016143%20Indonesia&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            class="absolute top-0 left-0 w-full h-full"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="PT. Sulawesi Coco Total Indonesia Location">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <span class="text-2xl font-serif font-bold text-white tracking-wide mb-4 block">PT. SCTI</span>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
+                        Bridging the gap between Indonesia's finest producers and the world. Supplying premium, sustainably sourced commodities with integrity and excellence.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-3 text-gray-400 text-sm max-w-sm">
+                            <i class="fas fa-map-marker-alt mt-1 text-brand-gold"></i>
+                            <p><strong class="text-gray-200">Sales Office:</strong><br>Jl. Sambu no 7 kecamatan Baranangsiang Bogor 16143 Indonesia</p>
+                        </div>
+                        <div class="flex items-start gap-3 text-gray-400 text-sm max-w-sm">
+                            <i class="fas fa-industry mt-1 text-brand-gold"></i>
+                            <p><strong class="text-gray-200">Site Project:</strong><br>BTN Grandcity blok B/5 rt03 rw01 Gersamata, Laikaaha, Ranomeeto Konawe Selatan, Kendari Southeast Sulawesi 93870 Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                         <a href="https://wa.me/6282241622230" target="_blank" class="text-gray-400 hover:text-brand-gold transition text-xl"><i class="fab fa-whatsapp"></i></a>
+                         <a href="mailto:b.ichsan0911@gmail.com" class="text-gray-400 hover:text-brand-gold transition text-xl"><i class="far fa-envelope"></i></a>
+                         <a href="https://www.facebook.com/p/PT-Sulawesi-Coco-Total-Indonesia-61569976538716/" target="_blank" class="text-gray-400 hover:text-brand-gold transition text-xl"><i class="fab fa-facebook-f"></i></a>
+                         <a href="https://www.instagram.com/scti_05/" target="_blank" class="text-gray-400 hover:text-brand-gold transition text-xl"><i class="fab fa-instagram"></i></a>
+                         <a href="https://linkedin.com/in/b.ichsan-20287255" target="_blank" class="text-gray-400 hover:text-brand-gold transition text-xl"><i class="fab fa-linkedin-in"></i></a>
+                         <a href="https://tiktok.com/@mudahmart1" target="_blank" class="text-gray-400 hover:text-brand-gold transition text-xl"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm text-gray-300">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-brand-gold transition">About Company</a></li>
+                        <li><a href="#products" class="hover:text-brand-gold transition">Product Catalog</a></li>
+                        <li><a href="#why-us" class="hover:text-brand-gold transition">Why Choose Us</a></li>
+                        <li><a href="#contact" class="hover:text-brand-gold transition">Contact & Inquiry</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm text-gray-300">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition">Terms of Trade</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-xs">© 2024 PT. Sulawesi Coco Total Indonesia. All rights reserved.</p>
+                <p class="text-gray-500 text-xs">Designed for Global Trade.</p>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Floating WhatsApp Button (Live Chat B2B) -->
+    <!-- Perbaikan: memastikan position fixed berada di level teratas body, bukan di dalam container relative -->
+    <a href="https://wa.me/6282241622230" target="_blank" rel="noopener noreferrer" style="position: fixed; bottom: 30px; right: 30px; z-index: 9999;" class="group flex items-center gap-3" aria-label="Chat with Mr. Ichsan on WhatsApp">
+        <!-- Tooltip Text (Muncul saat di-hover di Desktop) -->
+        <span class="hidden md:block opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-brand-dark text-sm font-semibold py-2 px-4 rounded-lg shadow-xl border border-gray-200 transform translate-x-4 group-hover:translate-x-0 pointer-events-none whitespace-nowrap">
+            Have questions? Chat now!
+        </span>
+        <!-- Main WA Button -->
+        <div class="relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#1ebe57] hover:scale-110 transition-all duration-300">
+            <!-- Efek animasi denyut (ping) di belakang tombol -->
+            <div class="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-25"></div>
+            <i class="fab fa-whatsapp text-3xl md:text-4xl relative z-10"></i>
+        </div>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animate On Scroll
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // Navbar Scroll Effect (Dark to Light Glass)
+        const navbar = document.getElementById('navbar');
+        const logo = document.getElementById('nav-logo');
+        const tagline = document.getElementById('nav-tagline');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('bg-transparent', 'py-4', 'border-white/10');
+                navbar.classList.add('py-2', 'border-gray-100');
+                
+                logo.classList.remove('text-white');
+                logo.classList.add('text-brand-dark');
+                
+                tagline.classList.remove('text-brand-gold');
+                tagline.classList.add('text-brand-primary');
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-gray-600');
+                });
+                
+                mobileMenuBtn.classList.remove('text-white');
+                mobileMenuBtn.classList.add('text-brand-dark');
+            } else {
+                navbar.classList.remove('nav-scrolled', 'py-2', 'border-gray-100');
+                navbar.classList.add('bg-transparent', 'py-4', 'border-white/10');
+                
+                logo.classList.remove('text-brand-dark');
+                logo.classList.add('text-white');
+
+                tagline.classList.remove('text-brand-primary');
+                tagline.classList.add('text-brand-gold');
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('text-gray-600');
+                    link.classList.add('text-white');
+                });
+                
+                mobileMenuBtn.classList.remove('text-brand-dark');
+                mobileMenuBtn.classList.add('text-white');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
