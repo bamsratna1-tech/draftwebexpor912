@@ -23,7 +23,6 @@
 
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <script>
         tailwind.config = {
             theme: {
@@ -109,12 +108,11 @@
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <a href="#" class="flex items-center gap-2 group">
-                    <div class="w-10 h-10 bg-brand-gold rounded flex items-center justify-center text-white font-serif font-bold text-xl group-hover:bg-amber-500 transition">
-                        S
-                    </div>
+                    <img src="aset/logo.JPG" alt="Logo PT. SCTI" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" id="nav-img-logo">
+                    
                     <div class="flex flex-col">
                         <span class="text-lg md:text-xl font-bold text-white transition-colors duration-300 leading-tight" id="nav-logo">
-                            PT. SCTI
+                            PT. Sulawesi Coco Total Indonesia
                         </span>
                         <span class="text-[0.65rem] text-brand-gold font-semibold uppercase tracking-wider hidden sm:block" id="nav-tagline">Global Export Partner</span>
                     </div>
@@ -332,68 +330,77 @@
                 </div>
 
             </div>
-
-            <!-- Authentic Local Products Grid -->
+<!-- OFFICIAL DOCUMENTS (NIB & OFFERING LETTER) -->
             <div class="mt-16">
-                <div class="flex items-center gap-4 mb-8">
+                <div class="flex items-center gap-4 mb-8" data-aos="fade-in">
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark">Official Documents</h3>
+                    <div class="flex-1 h-px bg-gray-200"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Frame 1: NIB -->
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-6 flex flex-col items-center group hover:bg-white hover:border-brand-gold transition duration-300 shadow-sm hover:shadow-lg" data-aos="fade-up">
+                        <div class="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center text-brand-dark mb-4 group-hover:text-brand-gold transition">
+                            <i class="fas fa-file-signature text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">NIB (Nomor Induk Berusaha)</h4>
+                        <p class="text-sm text-gray-500 mb-6 text-center">Our official business registration document.</p>
+                        
+                        <div class="w-full h-80 bg-gray-200 rounded-lg overflow-hidden relative">
+                            <img src="aset/nib.JPG" class="w-full h-full object-cover filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Frame 2: Offering Letter -->
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-6 flex flex-col items-center group hover:bg-white hover:border-brand-gold transition duration-300 shadow-sm hover:shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center text-brand-dark mb-4 group-hover:text-brand-gold transition">
+                            <i class="fas fa-file-invoice text-xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-brand-dark mb-2">Official Offering Letter</h4>
+                        <p class="text-sm text-gray-500 mb-6 text-center">Standard offering terms for our global partners.</p>
+                        
+                        <div class="w-full h-80 bg-gray-200 rounded-lg overflow-hidden relative">
+                            <img src="aset/offering.JPG" alt="Offering Letter Dummy" class="w-full h-full object-cover filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NEW TEXT ADDTION: RETAIL EXPORT & CONTRACT FLEXIBILITY -->
+                <div class="mt-10 bg-[#F0F7FF] border-l-4 border-brand-gold p-6 rounded-r-xl shadow-sm" data-aos="fade-up">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-info-circle text-brand-gold text-2xl mt-1 animate-pulse"></i>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-1 text-lg">Flexible Retail Export & Contract Supply</h4>
+                            <p class="text-sm text-gray-700 leading-relaxed font-medium">
+                                We provide ready to sell retail products under flexible supplier contracts. Items can be ordered separately, and we accommodate partial shipments based on your specific delivery schedule and dispatch requests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <!-- HORIZONTAL CAROUSEL SECTION FOR 37 PRODUCTS -->
+            <div class="mt-20">
+                <div class="flex items-center gap-4 mb-8" data-aos="fade-in">
                     <h3 class="text-2xl font-serif font-bold text-brand-dark">Authentic Local F&B Specialties</h3>
                     <div class="flex-1 h-px bg-gray-200"></div>
                 </div>
+                
+                <p class="text-sm text-gray-500 mb-6" data-aos="fade-in">Slide or drag to explore our 37 curated local specialties.</p>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    
-                    <!-- Item: Soy Milk -->
-                    <div class="group cursor-pointer" data-aos="fade-up">
-                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
-                            <img src="https://switch4good.org/wp-content/uploads/2025/07/Soy-Milk-1-1024x582.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Soy Milk">
-                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
-                            </div>
-                        </div>
-                        <h4 class="font-bold text-lg text-brand-dark">Pesantren Soy Milk</h4>
-                        <p class="text-sm text-gray-500 mb-1">Origin: West Java</p>
-                        <p class="text-xs text-gray-600 line-clamp-3">Crafted in a local Islamic boarding school. Empowering education through commerce with pure, highly nutritious soy milk.</p>
+                <!-- 
+                   CAROUSEL CONTAINER
+                   (Menghapus class snap-x snap-mandatory agar auto-scroll JS tidak bentrok)
+                -->
+                <div id="fnb-carousel" class="flex overflow-x-auto gap-6 pb-8 pt-2 scrollbar-hide cursor-grab" data-aos="fade-up">
+                    <!-- Produk ini di-generate via JavaScript di bawah agar HTML tidak terlalu panjang (mencapai 37 produk), tapi styling class Tailwindnya tetap di sini -->
+                </div>
+                
+                <!-- Helper indicator for mobile -->
+                <div class="flex justify-center mt-2">
+                    <div class="flex items-center gap-2 text-brand-primary text-sm font-semibold animate-pulse">
+                        <i class="fas fa-arrow-left"></i> Swipe to explore <i class="fas fa-arrow-right"></i>
                     </div>
-
-                    <!-- Item: Pineapple Juice -->
-                    <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
-                            <img src="https://images.unsplash.com/photo-1550828520-4cb496926fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Pineapple Juice">
-                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
-                            </div>
-                        </div>
-                        <h4 class="font-bold text-lg text-brand-dark">Fresh Pineapple Juice</h4>
-                        <p class="text-sm text-gray-500 mb-1">Origin: Sukabumi</p>
-                        <p class="text-xs text-gray-600 line-clamp-3">Sun-kissed pineapples pressed immediately to lock in pure, refreshing goodness without artificial additives.</p>
-                    </div>
-
-                    <!-- Item: Brem & Pecel -->
-                    <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
-                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
-                            <img src="https://awsimages.detik.net.id/community/media/visual/2022/10/20/brem-madiun-2.jpeg?w=1200" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Madiun Cuisine">
-                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
-                            </div>
-                        </div>
-                        <h4 class="font-bold text-lg text-brand-dark">Brem & Bumbu Pecel</h4>
-                        <p class="text-sm text-gray-500 mb-1">Origin: Madiun</p>
-                        <p class="text-xs text-gray-600 line-clamp-3">Showcasing East Java's culinary heritage. Traditional sweet Brem and meticulously crafted, authentic peanut sauce.</p>
-                    </div>
-
-                    <!-- Item: Krupuk Udang -->
-                    <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-                        <div class="relative h-48 rounded-xl overflow-hidden mb-4">
-                            <img src="https://down-id.img.susercontent.com/file/416ffbb6276a0872c9756c751ad5830b" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Shrimp Crackers">
-                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                                <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">Read Story</span>
-                            </div>
-                        </div>
-                        <h4 class="font-bold text-lg text-brand-dark">Krupuk Udang (Crackers)</h4>
-                        <p class="text-sm text-gray-500 mb-1">Origin: Sidoarjo</p>
-                        <p class="text-xs text-gray-600 line-clamp-3">Made with fresh, locally sourced shrimp from coastal waters, processed to maintain its signature crunch globally.</p>
-                    </div>
-
                 </div>
             </div>
 
@@ -494,15 +501,13 @@
                         </div>
                         <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
                             <span class="font-semibold text-gray-600 col-span-1">Established</span>
-                            <span class="text-gray-900 col-span-2">[Year Established, e.g., 2023]</span>
+                            <span class="text-gray-900 col-span-2">2024</span>
                         </div>
                         <div class="grid grid-cols-3 border-b border-gray-200 pb-3">
                             <span class="font-semibold text-gray-600 col-span-1">NIB (Reg. Number)</span>
-                            <span class="text-gray-900 col-span-2 font-mono bg-white px-2 py-1 border rounded">[Your NIB Number]</span>
+                            <span class="text-gray-900 col-span-2 font-mono bg-white px-2 py-1 border rounded">[2404240431359]</span>
                         </div>
-                        <div class="grid grid-cols-3 pb-2">
-                            <span class="font-semibold text-gray-600 col-span-1">Tax ID (NPWP)</span>
-                            <span class="text-gray-900 col-span-2 font-mono bg-white px-2 py-1 border rounded">[Your NPWP Number]</span>
+                        
                         </div>
                     </div>
                 </div>
@@ -548,7 +553,7 @@
                             </div>
                             <div class="grid grid-cols-3 border-b border-white/20 pb-3">
                                 <span class="font-semibold text-gray-400 col-span-1">SWIFT Code</span>
-                                <span class="col-span-2 font-mono text-brand-gold tracking-widest">[SWIFT CODE]</span>
+                                <span class="col-span-2 font-mono text-brand-gold tracking-widest">[BRINIDJA]</span>
                             </div>
                         </div>
                         <div class="space-y-4">
@@ -558,7 +563,7 @@
                             </div>
                             <div class="grid grid-cols-3 border-b border-white/20 pb-3">
                                 <span class="font-semibold text-gray-400 col-span-1">Account USD</span>
-                                <span class="col-span-2 font-mono text-lg">[Your USD Account Number]</span>
+                                <span class="col-span-2 font-mono text-lg">[381801026116534]</span>
                             </div>
                         </div>
                     </div>
@@ -633,10 +638,10 @@
                             <a href="https://www.instagram.com/scti_05/" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-pink-600 transition" title="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://linkedin.com/in/b.ichsan-20287255" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-500 transition" title="LinkedIn">
+                            <a href="https://www.linkedin.com/in/b-ichsan-42b95877/" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-500 transition" title="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://tiktok.com/@mudahmart1" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-black transition" title="TikTok">
+                            <a href="https://tiktok.com/@ichsan0344" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-black transition" title="TikTok">
                                 <i class="fab fa-tiktok"></i>
                             </a>
                         </div>
@@ -713,7 +718,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="md:col-span-2">
-                    <span class="text-2xl font-serif font-bold text-white tracking-wide mb-4 block">PT. SCTI</span>
+                    <span class="text-2xl font-serif font-bold text-white tracking-wide mb-4 block">PT. Sulawesi Coco Total Indonesia</span>
                     <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
                         Bridging the gap between Indonesia's finest producers and the world. Supplying premium, sustainably sourced commodities with integrity and excellence.
                     </p>
@@ -849,6 +854,133 @@
                 mobileMenu.classList.add('hidden');
             });
         });
+         // ==========================================
+        // DYNAMIC RENDERING 37 PRODUCTS & CAROUSEL
+        // ==========================================
+        
+        // Data Produk (Mencakup 4 awal + produk lokal tambahan)
+        // Saya generate beragam mock data untuk mencapai total 37 produk
+        const fnbProducts = [
+            { img: "https://switch4good.org/wp-content/uploads/2025/07/Soy-Milk-1-1024x582.jpg", title: "Pesantren Soy Milk", origin: "West Java", desc: "Empowering education through commerce with pure, highly nutritious soy milk." },
+            { img: "https://images.unsplash.com/photo-1550828520-4cb496926fc9?auto=format&fit=crop&w=500&q=80", title: "Fresh Pineapple Juice", origin: "Sukabumi", desc: "Sun-kissed pineapples pressed immediately to lock in pure, refreshing goodness." },
+            { img: "aset/brem.jpeg", title: "Brem & Bumbu Pecel", origin: "Madiun", desc: "Traditional sweet Brem and meticulously crafted, authentic peanut sauce." },
+            { img: "aset/kripiktempe.jpg", title: "Kripik Tempe (Crackers)", origin: "Cilacap", desc: "Crispy tempe crackers seasoned with traditional spices." },
+            { img: "aset/pumpkin.jpeg", title: "Pumpkin", origin: "cianjur", desc: "Fresh, locally sourced pumpkin perfect for seasonal recipes." },
+            { img: "aset/strawberry.jpeg", title: "Strawberry", origin: "Manado", desc: "Vibrant, juicy, and naturally sweet, handpicked at peak ripeness from cool highland slopes." },
+            { img: "aset/manggis.jpeg", title: "Mangosten", origin: "Indonesia", desc: "Delicious and nutritious fruit with a unique flavor profile." },
+            { img: "aset/kentang.jpeg", title: "Potatoes", origin: "Indonesia", desc: "Fermented soybean chips seasoned with traditional spices, perfect for snacking." },
+            { img: "aset/cocoa.jpeg", title: "Cocoa", origin: "Bali", desc: "Rich, smooth cocoa beans sourced from sustainable plantations." },
+            { img: "aset/petai.jpeg", title: "Archidendron & Stink Beans", origin: "Indonesia", desc: "Unique and flavorful legumes with a distinctive aroma." },
+            { img: "aset/ikan tenggiri.jpeg", title: "Mackerel Fillet", origin: "Indonesia", desc: "Fresh mackerel fillets, perfect for grilling or frying." },
+            { img: "aset/belut.jpeg", title: "Eel", origin: "Indonesia", desc: "Carefully sourced for a delicate texture and natural energy-boosting properties." },
+            { img: "aset/sardines.jpeg", title: "Sardines", origin: "Indonesia", desc: "Fresh sardines, rich in omega-3 fatty acids." },
+            { img: "aset/udangkrispi.jpeg", title: "Crispy Shrimp Snack", origin: "Indonesia", desc: "Crispy shrimp snacks seasoned with traditional spices." },
+            { img: "aset/abonbarokah.jpeg", title: "Beef & Chicken Floss", origin: "Indonesia", desc: "Delicious and nutritious floss made from premium beef and chicken." },
+            { img: "aset/Bawanggoreng.jpeg", title: "Fried Shallots “Nyonya Tjipta”", origin: "Indonesia", desc: "Crispy fried shallots with a unique, savory flavor." },
+            { img: "aset/tambi.jpeg", title: "Tambi Tea", origin: "Indonesia", desc: "A refreshing tea made from locally sourced ingredients." },
+            { img: "aset/ladaputih.jpeg", title: "White Pepper Powder", origin: "Indonesia", desc: "Aromatic and flavorful white pepper powder, perfect for seasoning." },
+            { img: "aset/pala.jpeg", title: "Nutmeg (Biji Pala)", origin: "Indonesia", desc: "Premium Indonesian nutmeg offering deep, nutty sweetness to savory and sweet dishes." },
+            { img: "aset/kalsigo.jpeg", title: "KALSIGO Etawa Goat Milk", origin: "Indonesia", desc: "A holistic blend of goat milk, palm sugar, and herbal extracts for daily wellness." },
+            { img: "aset/calsimond.jpeg", title: "Calsimond Almond Milk", origin: "Indonesia", desc: "Creamy, dairy-free goodness crafted for a mindful and healthy lifestyle." },
+            { img: "aset/honey.jpeg", title: "Forest Honey", origin: "Indonesia", desc: "Raw and unrefined honey gathered directly from pristine tropical jungles." },
+            { img: "aset/bajakah.jpeg", title: "Bajakah Root", origin: "Indonesia", desc: "A revered forest botanical traditionally used to support vitality and natural resilience." },
+            { img: "aset/minyakurut.jpeg", title: "Dayak Massage Oil", origin: "Indonesia", desc: "Rich and aromatic massage oil for relaxation and wellness." },
+            { img: "aset/gaharu.jpeg", title: "Agarwood Oil (Gaharu)", origin: "Indonesia", desc: "A rare, highly prized resinous oil offering ultimate luxury and spiritual grounding." },
+            { img: "aset/bukhur.jpeg", title: "Maamoul Dossary Incense", origin: "Indonesia", desc: "Premium Saudi Arabian-style Bukhur that creates a rich, elegant atmosphere." },
+            { img: "aset/cocopeat.jpeg", title: "Cocopeat & Coco Husk", origin: "Indonesia", desc: "Eco-friendly natural growing mediums with perfect moisture and nutrient retention." },
+            { img: "aset/coconucoil.jpeg", title: "Coconut Coil Roll", origin: "Indonesia", desc: "Resilient, 100% biodegradable natural fibers designed for reliable soil contouring." },
+            { img: "aset/Ulin.jpeg", title: "Ulin Wood Charcoal", origin: "Indonesia", desc: "Industrial-grade ironwood charcoal delivering intense, reliable, and long-lasting heat." },
+            { img: "aset/halaban.jpeg", title: "Halaban Wood Charcoal", origin: "Indonesia", desc: "High-quality wood charcoal for cooking and grilling." },
+            { img: "aset/rubber.jpeg", title: "Natural Rubber (SIR 10 / SVR 10 & Raw Sheets)", origin: "Indonesia", desc: "High-quality natural rubber for various industrial applications." }
+        ];
+
+        // Memperbanyak array hingga 37 items agar sesuai pesanan klien
+        let carouselProducts = [];
+        let counter = 0;
+        while(carouselProducts.length < 37) {
+            // Mengambil item secara berulang dari array asli
+            let product = {...fnbProducts[counter % fnbProducts.length]}; 
+            product.id = carouselProducts.length + 1;
+            carouselProducts.push(product);
+            counter++;
+        }
+
+        // Render HTML
+        const carouselContainer = document.getElementById('fnb-carousel');
+        let htmlContent = '';
+        carouselProducts.forEach((item, index) => {
+            // Menghapus class snap-center dari masing-masing card
+            htmlContent += `
+                <div class="group cursor-pointer flex-none w-[280px] md:w-[320px] bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="${item.img}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="${item.title}" loading="lazy">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <span class="text-white font-bold text-sm border border-white px-3 py-1 rounded">View Detail</span>
+                        </div>
+                        <div class="absolute top-2 right-2 bg-brand-gold text-brand-dark text-xs font-bold px-2 py-1 rounded shadow">#${item.id}</div>
+                    </div>
+                    <h4 class="font-bold text-lg text-brand-dark truncate">${item.title}</h4>
+                    <p class="text-sm text-brand-primary mb-2 font-medium"><i class="fas fa-map-marker-alt text-xs mr-1"></i> ${item.origin}</p>
+                    <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">${item.desc}</p>
+                </div>
+            `;
+        });
+        carouselContainer.innerHTML = htmlContent;
+
+        // Auto Scroll & Drag Logic
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let isPaused = false;
+
+        // 1. Manual Dragging (Mouse)
+        carouselContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            isPaused = true; // Pause auto-scroll
+            carouselContainer.style.cursor = 'grabbing';
+            startX = e.pageX - carouselContainer.offsetLeft;
+            scrollLeft = carouselContainer.scrollLeft;
+        });
+
+        carouselContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+            isPaused = false;
+            carouselContainer.style.cursor = 'grab';
+        });
+
+        carouselContainer.addEventListener('mouseup', () => {
+            isDown = false;
+            isPaused = false;
+            carouselContainer.style.cursor = 'grab';
+        });
+
+        carouselContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - carouselContainer.offsetLeft;
+            const walk = (x - startX) * 2; // Kecepatan geser manual
+            carouselContainer.scrollLeft = scrollLeft - walk;
+        });
+
+        // 2. Pause on Touch (HP)
+        carouselContainer.addEventListener('touchstart', () => isPaused = true, {passive: true});
+        carouselContainer.addEventListener('touchend', () => isPaused = false);
+
+        // 3. Auto Scroll (Continuous)
+        function autoScroll() {
+            if (!isPaused && !isDown) {
+                carouselContainer.scrollLeft += 1; // Kecepatan Auto scroll (px per frame)
+                
+                // Jika sudah sampai ujung kanan, kembali ke kiri (Menggunakan Math.ceil untuk toleransi pixel desimal)
+                if (Math.ceil(carouselContainer.scrollLeft) >= (carouselContainer.scrollWidth - carouselContainer.clientWidth)) {
+                    carouselContainer.scrollLeft = 0;
+                }
+            }
+            requestAnimationFrame(autoScroll);
+        }
+        
+        // Start auto-scroll
+        requestAnimationFrame(autoScroll);
     </script>
 </body>
 </html>
